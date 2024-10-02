@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <title>Data Siswa</title>
+    <title>Data Guru</title>
   </head>
 
   <body>
@@ -29,7 +29,6 @@
                     <th scope="col">NAMA LENGKAP</th>
                     <th scope="col">JENIS KELAMIN</th>
                     <th scope="col">ALAMAT</th>
-                    <th scope="col">FOTO</th>
                     <th scope="col">AKSI</th>
                   </tr>
                 </thead>
@@ -47,7 +46,6 @@
                       <td><?php echo $row['nama_lengkap'] ?></td>
                       <td><?php echo $row['jenis_kelamin'] ?></td>
                       <td><?php echo $row['alamat'] ?></td>
-                      <td>DATA KOSONG</td>
                       <td class="text-center">
                         <a href="edit-guru.php?id=<?php echo $row['id_siswa'] ?>" class="btn btn-sm btn-primary">EDIT</a>
                         <a href="hapus-guru.php?id=<?php echo $row['id_siswa'] ?>" class="btn btn-sm btn-danger">HAPUS</a>
